@@ -1,0 +1,37 @@
+<idea-plugin>
+  <id>com.realmo.plugin.test</id>
+  <name>PluginMo</name>
+  <version>1.0</version>
+  <vendor email="momo.weiye@gmail.com" url="https://github.com/RealMoMo">RealMo</vendor>
+
+  <description><![CDATA[
+      RealMo Test Plugin!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    ]]></description>
+
+  <change-notes><![CDATA[
+      RealMo Test Plugin!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="Test" class="action.TestPlugin" text="RealMoPlugin" description="Test Plugin">
+      <add-to-group group-id="GenerateGroup" anchor="last"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl S"/>
+    </action>
+  </actions>
+
+</idea-plugin>
